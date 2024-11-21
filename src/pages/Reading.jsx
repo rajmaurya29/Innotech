@@ -12,6 +12,7 @@ import {
   Sparkles 
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import BackButton from '../components/BackButton';
 
 const readingCategories = [
   {
@@ -106,24 +107,14 @@ const Reading = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 opacity-70" />
       
       <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-24">
-        <motion.button
-          onClick={() => navigate('/')}
-          className="flex items-center text-gray-700 hover:text-gray-900 transition-colors mb-8 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-xl shadow-sm hover:shadow-md"
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          whileHover={{ x: -5 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <ArrowLeft className="mr-2" size={20} />
-          Back to Activities
-        </motion.button>
+      <BackButton/>
 
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-purple-700 mb-4">
+          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-purple-700 mb-4" style={{padding:"20px"}}>
             Reading Corner
           </h1>
           <p className="text-gray-700 text-xl font-medium">Explore a world of words, wisdom, and wonder</p>

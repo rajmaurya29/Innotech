@@ -46,8 +46,8 @@ const Home = () => {
           >
             <div className="flex items-center justify-center mb-6">
               <Brain className="text-indigo-600 w-12 h-12 mr-3" />
-              <h1 className="text-6xl font-bold text-gray-900 tracking-tight">
-                BugBuster
+              <h1 className="text-6xl font-bold text-gray-900 tracking-tight" style={{fontFamily:"cursive"}}>
+                MindBug
               </h1>
             </div>
 
@@ -56,10 +56,11 @@ const Home = () => {
             </p>
 
             <motion.button
-              onClick={() => navigate('/login')}
+              onClick={() => navigate('/activities')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-indigo-600 text-white font-bold py-4 px-12 rounded-full shadow-lg hover:shadow-xl hover:bg-indigo-700 transition-all duration-300"
+              style={{ backgroundColor: 'rgb(103, 15, 174)' }}
             >
               Start Your Journey
             </motion.button>
@@ -76,8 +77,8 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
               {[
                 {
-                  name: "....",
-                  role: "Team Lead & Developer",
+                  name: "Kunwar Ratnesh",
+                  role: "Team Lead & UI/UX Developer",
                   social: {
                     github: "#",
                     linkedin: "#",
@@ -85,8 +86,8 @@ const Home = () => {
                   }
                 },
                 {
-                  name: " ..",
-                  role: "UX Designer & Developer",
+                  name: "Praveen Singh",
+                  role: "UI/UX & Frontend Developer",
                   social: {
                     github: "#",
                     linkedin: "#",
@@ -94,10 +95,10 @@ const Home = () => {
                   }
                 },
                 {
-                  name: "Raj",
-                  role: "Backend Developer",
+                  name: "Raj Maurya",
+                  role: "Full Stack Developer",
                   social: {
-                    github: "#",
+                    github: "https://github.com/rajmaurya29/",
                     linkedin: "#",
                     twitter: "#"
                   }
@@ -138,7 +139,7 @@ const Home = () => {
               ))}
             </div>
             <div className="text-center mt-6 text-gray-500 text-sm">
-              © {new Date().getFullYear()} MindFlow. All rights reserved.
+              © {new Date().getFullYear()} MindBug. All rights reserved.
             </div>
           </motion.div>
         </footer>

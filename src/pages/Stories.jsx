@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, BookOpen, Clock, User } from 'lucide-react';
 import { gsap } from 'gsap';
-
 const stories = [
   {
     title: "The Last Leaf",
@@ -47,15 +46,18 @@ const Stories = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 p-6">
+      
       <div ref={containerRef} className="max-w-7xl mx-auto pt-16">
-        <button
+        
+        {/* <button
           onClick={() => navigate('/activities/reading')}
-          className="flex items-center text-gray-600 hover:text-gray-800 transition-colors mb-8"
+          className="flex items-center text-gray-600 hover:text-gray-800 transition-colors mb-8" 
+          // style={{backgroundColor:"Red"}}
         >
           <ArrowLeft className="mr-2" size={20} />
           Back to Reading
-        </button>
-
+        </button> */}
+        
         <h1 className="text-4xl font-bold text-gray-800 mb-12">Short Stories</h1>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -71,6 +73,7 @@ const Stories = () => {
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-gray-800 mb-2">{story.title}</h2>
+                
                 <p className="text-gray-600 mb-4">{story.preview}</p>
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <div className="flex items-center">
@@ -84,6 +87,7 @@ const Stories = () => {
                 </div>
               </div>
             </div>
+            
           ))}
         </div>
       </div>

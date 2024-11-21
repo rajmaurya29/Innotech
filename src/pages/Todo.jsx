@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
+import BackButton from "../components/BackButton";
 
 function Todo() {
   const [arStore,setArStore]=useState([]);
@@ -118,6 +119,7 @@ form button:hover{
     </head>
     <div>
       <Header />
+      <BackButton/>
       <CreateArea arAddItem={addItem}/>
       
     </div>

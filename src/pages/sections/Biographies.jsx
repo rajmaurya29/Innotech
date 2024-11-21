@@ -13,7 +13,7 @@ const biographies = [
     name: "Albert Einstein",
     achievement: "Theory of Relativity",
     excerpt: "Developed the theory of relativity, one of the two pillars of modern physics.",
-    image: "https://images.unsplash.com/photo-1621779055172-f76ae1765a65?auto=format&fit=crop&q=80&w=1000"
+    image: "https://plus.unsplash.com/premium_photo-1676750395664-3ac0783ae2c2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Leonardo da Vinci",

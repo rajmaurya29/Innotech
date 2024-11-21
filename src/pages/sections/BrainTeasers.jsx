@@ -6,7 +6,7 @@ const brainTeasers = [
   {
     question: "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
     answer: "An echo",
-    image: "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?auto=format&fit=crop&q=80&w=1000"
+    image: "https://images.unsplash.com/photo-1620098255118-a5e1a0ee92b6?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     question: "What has keys, but no locks; space, but no room; and you can enter, but not go in?",

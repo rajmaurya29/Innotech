@@ -15,12 +15,13 @@ import BrainTeasers from './pages/sections/BrainTeasers';
 import Dohe from './pages/sections/Dohe';
 import Shayari from './pages/sections/Shayari';
 import Meditation from './pages/Meditation';
-import drawing from './pages/Drawing';
 import Drawing from './pages/Drawing';
 import  Todo from './pages/Todo';
 import HabEx from './pages/HabEx';
 import RexSpots from './pages/RexSpots';
 import Gaming from './pages/Gaming';
+import WeeklyPlanner from './pages/WeeklyPlanner';
+import Stopwatch from './pages/Stopwatch';
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
           <Route path="/activities/rexspots" element={<RexSpots />} />
           <Route path="/activities/gaming" element={<Gaming />} />
           <Route path="/activities/Drawing" element={<Drawing />} />
+          <Route path="/activities/stopwatch" element={<Stopwatch />} />
+          <Route path="/activities/weekly-planner" element={<WeeklyPlanner />} />
+          
           
           <Route path="/contact" element={<Contact />} />
         </Routes>

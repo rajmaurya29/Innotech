@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Quote } from 'lucide-react';
 import { gsap } from 'gsap';
-
+import BackButton from '../components/BackButton';
 const quotes = [
   {
     text: "The only way to do great work is to love what you do.",
@@ -46,14 +46,16 @@ const Quotes = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 p-6">
+      {/* <BackButton/>
+      <BackButton/> */}
       <div ref={containerRef} className="max-w-7xl mx-auto pt-16">
-        <button
+        {/* <button
           onClick={() => navigate('/reading')}
           className="flex items-center text-gray-600 hover:text-gray-800 transition-colors mb-8"
         >
           <ArrowLeft className="mr-2" size={20} />
           Back to Reading
-        </button>
+        </button> */}
 
         <h1 className="text-4xl font-bold text-gray-800 mb-12">Inspiring Quotes</h1>
 
